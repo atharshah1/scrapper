@@ -29,10 +29,10 @@ pipeline{
    steps{
     sshagent(['k8s-jenkins'])
     {
-     sh 'scp -r -o StrictHostKeyChecking=no scraper-deployment.yml ubuntu@3.89.164.172:/home/ubuntu/'
+     sh 'scp -r -o StrictHostKeyChecking=no scraper-deployment.yml ubuntu@54.152.193.186:/home/ubuntu/'
 script{
       try{
-       sh 'ssh ubuntu@3.89.164.172 kubectl apply -f /home/ubuntu/scraper-deployment.yml --kubeconfig=/home/ubuntu/.kube/config'
+       sh 'ssh ubuntu@54.152.193.186 kubectl apply -f /home/ubuntu/scraper-deployment.yml --kubeconfig=/home/ubuntu/.kube/config'
 }catch(error)
        {
 }
