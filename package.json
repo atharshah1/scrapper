@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon index.js"
   },
-  "author": "sania kaleem",
+  "author": "Athar",
   "license": "ISC",
   "dependencies": {
     "Router": "^2.1.0",
